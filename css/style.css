@@ -1,0 +1,95 @@
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+header, .nav_links, .pricing, .gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    align-items: center;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+
+.card{
+    width: 100%;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+#logo { animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+      animation: none;
+    }
+  }
+
+@media only screen and (min-width: 700px) {
+    header img{
+        width: 400px;
+        height: auto;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_links{
+        flex-direction: row;
+    }
+
+    .pricing{
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .gallery{
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .gallery img{
+        width: 300px;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    #logo { animation: fadeIn 3s; }
+
+    @keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #logo {
+          animation: none;
+        }
+      }
+  }
+
